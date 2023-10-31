@@ -60,7 +60,7 @@ their name are boosted to the top.
 
 ### Fuzzy matching on restaurant name - 5 points
 
-A search with a typo such as "bakery", and and see results with "bakery" in the name
+A search with a typo such as "bakety" will return results with "bakery" in the name
 
 ### I can filter by minimum rating - 10 points
 
@@ -74,3 +74,8 @@ When selecting one or more types, the results are filtered by these types.
 ### I can search by partial matches - 20 points
 
 A search for the incomplete word "bak" returns restaurants with "bakery" in the name
+
+
+### I can filter by geo location - 50 points
+
+You will need to create the frontend component for this! Add a filter to be able to filter restaurants to X miles within your current location.
