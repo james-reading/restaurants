@@ -1,0 +1,7 @@
+<turbo-stream action="update" target="search-results">
+  <template>
+    <% @restaurants.each do |restaurant| %>
+      <%= erb(:restaurant, locals: {restaurant: restaurant}) %>
+    <% end %>
+  </template>
+</turbo-stream>

@@ -1,0 +1,22 @@
+<li class="bg-white p-6">
+  <div class="text-xl font-bold">
+    <%= restaurant.name %>
+  </div>
+  <div class="text-lg text-gray-400">
+    <%= restaurant.type %>
+  </div>
+  <div class="mt-2">
+    <span><%= restaurant.rating %></span>
+    <span class="text-gray-400">/ 5<span>
+  </div>
+  <div class="mt-4">
+    <%= restaurant.description %>
+  </div>
+  <div class="-m-1 mt-4 flex flex-wrap">
+    <% restaurant.menu.each do |item| %>
+      <div class="text-sm border p-1 px-2 text-gray-600 border-gray-800 m-1 whitespace-nowrap">
+        <%= item %>
+      </div>
+    <% end %>
+  </div>
+</li>
